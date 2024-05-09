@@ -1,5 +1,5 @@
 # FaceAdapter
-This is the repository that contains source code for the [FaceAdapter website](https://nerfies.github.io).
+This is the repository that contains source code for the [FaceAdapter website](https://face-adapter.github.io).
 
 
 # Website License
