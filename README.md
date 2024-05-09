@@ -1,5 +1,5 @@
 # FaceAdapter
-This is the repository that contains source code for the [FaceAdapter website](https://face-adapter.github.io).
+This is the repository that contains source code for the [FaceAdapter website](https://faceadapter.github.io/face-adapter.github.io/).
 
 
 # Website License
