@@ -246,7 +246,8 @@
         <div class="content">
           <h3 class="title is-4">Disentangled Attribute, ID and Motion </h3>
           <p>
-          Current text-based SD adapters for face editing, e.g., InstantID, suffer from loss in ID and motion accuracy caused by entangled text-based attribute control. Face-adapter fixes this issue and support faithful ID retention with fine-grained motion control, including gaze and vivid expression.
+          Current text-based SD adapters for face editing, e.g., InstantID, struggle to follow pose reference (sometimes even ID) with text-based attribute control. Face-adapter fixes this issue by designing a fully disentangled framework.
+          <!-- and support faithful ID retention with fine-grained motion control, including gaze and vivid expression. -->
           </p>
           <div class="item item-chair-tp">
             <img src="./static/images/reenact.png"
@@ -264,7 +265,7 @@
           <div class="column content">
             <p>
             <!-- <br> -->
-            Our Identity Encoder effectively injects ID using a transformer decoder. Without altering the weight of SD U-Net , we fully leverages the prior of the pretrained model and generate faces with rich details and high quality.                                  
+            Our Identity Encoder effectively injects ID using a transformer decoder. Without altering the weight of SD U-Net , we fully leverage the prior of the pretrained model and generate faces of high quality with rich details .                                  
             </p>
             <div class="item item-chair-tp">
               <img src="./static/images/swap.png"
