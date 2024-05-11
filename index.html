@@ -259,12 +259,11 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h2 class="title is-3">Matting</h2>
+        <h2 class="title is-3">Effective ID Injection</h2>
         <div class="columns is-centered">
           <div class="column content">
             <p>
-              As a byproduct of our method, we can also solve the matting problem by ignoring
-              samples that fall outside of a bounding box during rendering.
+            Our Identity Encoder effectively inject ID using a transformer decoder. Without altering the weight of SD U-Net , we fully leverages the prior of the pretrained model and generate faces with rich details and high quality.
             </p>
             <div class="item item-chair-tp">
               <img src="./static/images/swap.png"
