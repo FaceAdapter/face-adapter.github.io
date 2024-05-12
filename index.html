@@ -236,17 +236,49 @@
 </section>
 
 
+<!-- <section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Previous techniques for face reenactment and swapping predominantly rely on GAN frameworks. However, recent research has shifted its focus towards leveraging pre-trained diffusion models for these tasks, owing to their superior generation capabilities. Nonetheless, training these models incurs significant computational costs, and the results have not yet attained satisfactory performance levels.
+            To address this issue, we introduce <i><b>Face-Adapter</b></i>, an efficient and effective adapter designed for high-precision and high-fidelity face editing by pre-trained diffusion models. <br>
+          </p>
+          <p>Our method contains: <br>
+            &emsp; &#11088; A <i><b><span style="color: YellowGreen"> Spatial Condition Generator</span> </b></i> that provides precise landmarks and background;<br>
+            &emsp; &#11088; A Plug-and-play <i><b><span style="color: Gold">Identity Encoder</span> </b></i> that transfers face embeddings to the text space;<br>
+            &emsp; &#11088; An <i><b><span style="color: PaleVioletRed">Attribute Controller</span> </b> </i> that integrates spatial conditions and detailed attributes. <br>
+          </p>
+          <p>
+            <i><b>Face-Adapter</b></i> achieves comparable or even superior performance in terms of motion control precision, ID retention capability, and generation quality compared to fully fine-tuned models in face reenactment/swapping tasks. 
+            Additionally, <i><b>Face-Adapter</b></i> seamlessly integrates with popular pre-trained diffusion models such as various StableDiffusion models. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
 <section class="section">
   <div class="container is-max-desktop">
+
+   <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h3 class="title is-4">Face-adapter aims to address the unsatisfactory performance of current SD adapters for face editing in face reeanctment/ swapping. </h3>
+      </div>
+    </div>
 
     <div class="columns is-centered">
 
       <!-- Visual Effects. -->
       <div class="column">
         <div class="content">
-          <h3 class="title is-4">Disentangled Attribute, ID and Motion </h3>
+          <h4 class="title is-5">Face Reenactment </h3>
           <p>
-          Current text-based SD adapters for face editing, e.g., InstantID, struggle to follow pose reference (sometimes even ID) with text-based attribute control. Face-adapter fixes this issue by designing a fully disentangled framework.
+          Current SD adapters for face editing struggle to follow fine-grained motion reference (sometimes even ID) with text-based attribute control.
           <!-- and support faithful ID retention with fine-grained motion control, including gaze and vivid expression. -->
           </p>
           <div class="item item-chair-tp">
@@ -260,12 +292,12 @@
 
       <!-- Matting. -->
       <div class="column">
-        <h3 class="title is-4">Effective ID Injection</h3>
+        <h4 class="title is-5">Face Swapping</h3>
         <div class="columns is-centered">
           <div class="column content">
             <p>
             <!-- <br> -->
-            Our Identity Encoder effectively injects ID using a transformer decoder. Without altering the weight of SD U-Net , we fully leverage the prior of the pretrained model and generate faces of high quality with rich details .                                  
+            Current SD adapters for face editing struggle to generate facial detail and handle face shape changes in face swapping.
             </p>
             <div class="item item-chair-tp">
               <img src="./static/images/swap.png"
