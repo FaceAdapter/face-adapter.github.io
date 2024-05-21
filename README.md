@@ -1,4 +1,4 @@
-# FaceAdapter
+# Face Adapter for Pre-Trained Diffusion Models with Fine-Grained ID and Attribute Control
 This is the repository that contains source code for the [FaceAdapter website](https://faceadapter.github.io/face-adapter.github.io/).
 
 
